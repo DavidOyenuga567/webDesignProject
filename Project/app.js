@@ -44,11 +44,38 @@ app.get('/', (req, res) => {
 // contact route
 app.get('/contact', (req, res) => {
     state={contact : true}
-    head={title:"Contact - Week 1"}
+    head={title:"Contact"}
     res.render('contact', { state, head});
     console.log('contact')
   });
 
+  app.get('/aboutus', (req, res) => {
+    state={abooutus : true}
+    head={title:"About Us"}
+    res.render('aboutus', { state, head});
+    console.log('aboutus')
+  });
+
+app.get('/shop', (req, res) => {
+    state={shop : true}
+    head={title:"shop"}
+    res.render('shop', { state, head});
+    console.log('shop')
+  });
+
+  app.get('/signup', (req, res) => {
+    state={signup : true}
+    head={title:"signup"}
+    res.render('signup', { state, head});
+    console.log('signup')
+  });
+
+  app.get('/cart', (req, res) => {
+    state={cart : true}
+    head={title:"cart"}
+    res.render('cart', { state, head});
+    console.log('cart')
+  });
 
 // Start the server
 app.listen(3000, () => {
