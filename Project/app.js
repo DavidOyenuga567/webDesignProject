@@ -50,7 +50,7 @@ app.get('/contact', (req, res) => {
   });
 
   app.get('/aboutus', (req, res) => {
-    state={abooutus : true}
+    state={aboutus : true}
     head={title:"About Us"}
     res.render('aboutus', { state, head});
     console.log('aboutus')
