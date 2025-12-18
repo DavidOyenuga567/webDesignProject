@@ -1,8 +1,16 @@
 /* make page full-viewport width so navbar can span full page */
 html, body {
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* layout: make body a column so footer can stick to bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* content area constrained to centered 90% width */
@@ -10,6 +18,7 @@ html, body {
     width: 90%;
     margin: 0 auto;
     padding: 0;
+    flex: 1 0 auto;
 }
 
 nav ul {
@@ -17,9 +26,14 @@ nav ul {
     padding-left: 0;
 }
 
-/* allow Bootstrap to control nav layout (don't force inline list items) */
+/* allow Bootstrap to control nav layout */
 .navbar {
     background-color: red !important;
+}
+
+.navbar .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .nav-link {
@@ -27,6 +41,26 @@ nav ul {
 }
 
 .nav-link.active {
-    color: #fff !important;
-    background-color: black !important;
+    color: black !important;
+    background-color: transparent !important;
+}
+
+/* footer full width, content centered with same width as .site-content */
+footer {
+    width: 100%;
+    background: transparent;
+}
+footer p {
+    margin: 0;
+    padding: 1rem 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.pageTitle {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
