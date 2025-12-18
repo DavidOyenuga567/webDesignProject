@@ -29,6 +29,7 @@ nav ul {
 /* allow Bootstrap to control nav layout */
 .navbar {
     background-color: red !important;
+    padding: 1rem 0;
 }
 
 .navbar .container-fluid {
@@ -62,5 +63,18 @@ footer p {
 .pageTitle {
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.centertext {
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+
+.btn.centertext{
+    background-color: black;
+    color: white !important;
+    text-align: center;
     margin-bottom: 1rem;
 }
