@@ -1,13 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<nav>
-     <ul>
-          <li ><a  class='{{#if state.home}}active{{/if}}' href='/'>Home</a></li>
-          <li><a class='{{#if state.shop}}active{{/if}}' href='/shop'>Shop</a></li>     
-          <li><a class='{{#if state.signup}}active{{/if}}' href='/signup'>Sign up</a></li>
-          <li><a class='{{#if state.aboutus}}active{{/if}}' href='/aboutus'>About Us</a></li>
-          <li><a class='{{#if state.contact}}active{{/if}}' href='/contact'>Contact</a></li>
-          
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link {{#if state.home}}active{{/if}}" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link {{#if state.shop}}active{{/if}}" href="/shop">Shop</a></li>
+        <li class="nav-item"><a class="nav-link {{#if state.signup}}active{{/if}}" href="/signup">Sign up</a></li>
+        <li class="nav-item"><a class="nav-link {{#if state.aboutus}}active{{/if}}" href="/aboutus">About Us</a></li>
+        <li class="nav-item"><a class="nav-link {{#if state.contact}}active{{/if}}" href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 
-     </ul>
 </nav>
 

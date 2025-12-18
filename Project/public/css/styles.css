@@ -1,20 +1,32 @@
+/* make page full-viewport width so navbar can span full page */
 html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* content area constrained to centered 90% width */
+.site-content {
     width: 90%;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
 }
 
 nav ul {
-    list-style: none; 
-    padding-left:0;
+    list-style: none;
+    padding-left: 0;
 }
-nav li {
-    display:inline;
 
+/* allow Bootstrap to control nav layout (don't force inline list items) */
+.navbar {
+    background-color: red !important;
 }
-.active {
-    color :white;
-    background-color:green;
-    padding:0.5em;
 
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    color: #fff !important;
+    background-color: black !important;
 }
