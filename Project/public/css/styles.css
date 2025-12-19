@@ -37,6 +37,22 @@ nav ul {
     padding-right: 0;
 }
 
+/* Logo sizing & alignment */
+.navbar-brand img {
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Ensure brand and nav links are vertically centered */
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+}
+
 .nav-link {
     color: white !important;
 }
