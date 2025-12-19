@@ -77,6 +77,13 @@ app.get('/shop', (req, res) => {
     console.log('cart')
   });
 
+   app.get('/checkout', (req, res) => {
+    state={checkout : true}
+    head={title:"checkout"}
+    res.render('checkout', { state, head});
+    console.log('checkout')
+  });
+
   app.get('/submission', (req, res) => {
     const formDetails = {
         userName: req.query.userName,
@@ -86,6 +93,7 @@ app.get('/shop', (req, res) => {
     };
     res.render('submission', { formDetails });
 });
+
 
 // Start the server
 app.listen(3000, () => {
