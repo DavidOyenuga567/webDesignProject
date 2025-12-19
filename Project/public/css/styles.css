@@ -81,3 +81,77 @@ footer p {
     margin: 0.75rem auto 1rem auto;
     padding: 0.5rem 1rem;
 }
+
+
+input[type=text], input[type=password] {
+  width: 100%; 
+  padding: 15px; 
+  margin: 5px 0 22px 0; 
+  display: inline-block; /* Makes the input fields appear next to each other */
+  border: none; 
+  background: #f1f1f1; 
+}
+
+/* This part changes the style of input fields when you click on them */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd; 
+  outline: none; /* Removes the outline around the input fields when clicked */
+}
+
+
+.signupform {
+  border: 1px solid #ccc; 
+  padding: 20px; /* Adds space inside the form */
+  max-width: 400px; 
+  margin: auto; /* Centers the form horizontally */
+}
+
+.form-group {
+  display: flex; 
+  flex-direction: column; /* Stacks elements vertically */
+  margin-bottom: 10px; 
+}
+
+.form-group label {
+  font-weight: bold; 
+  margin-bottom: 5px; /* Adds spacing between label and input */
+}
+
+.form-group input {
+  width: 100%; 
+  padding: 10px; /* Adds space inside input for better usability */
+  font-size: 16px; 
+  border: 1px solid #ccc; /* Adds a subtle border to the input */
+  border-radius: 5px; /* Rounds input corners slightly */
+  background: #f5f5f5; /* Sets a light gray background */
+}
+
+/* This part styles buttons on the page */
+button {
+  background-color: #f44336; 
+  color: white; 
+  padding: 14px 20px; 
+   
+  border: none; 
+  cursor: pointer; /* Changes the mouse pointer to a hand when hovering over the button */
+  width: 100%; 
+  opacity: 0.9; /* Makes the button slightly transparent */
+  margin-bottom: 65px;
+}
+
+/* This part makes the button change when you hover over it */
+button:hover {
+  opacity: 1; /* Makes the button fully visible (not transparent) when you hover */
+}
+
+/* This part styles the signup button */
+.signupbtn {
+  padding: 14px 20px; 
+  background-color: #04AA6D; /* Makes the signup button green */
+}
+
+/* This part styles both the cancel and signup buttons to make them equal in width */
+.cancelbtn, .signupbtn {
+  float: left; /* Makes the buttons appear next to each other */
+  width: 50%; /* Makes the buttons take up half of the available space each */
+}
