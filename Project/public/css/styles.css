@@ -155,6 +155,14 @@ button {
   margin-bottom: 65px;
 }
 
+.cart {
+  border: none; 
+  cursor: pointer; /* Changes the mouse pointer to a hand when hovering over the button */
+  width: 100%; 
+  opacity: 0.9; /* Makes the button slightly transparent */
+  margin-bottom: 65px;
+}
+
 /* This part makes the button change when you hover over it */
 button:hover {
   opacity: 1; /* Makes the button fully visible (not transparent) when you hover */
@@ -261,4 +269,18 @@ button:hover {
         .btn.add-to-cart-btn {
             background-color: black;
             color: white !important;
+        }
+
+        /* Position View Cart button on the left */
+        .navbar-nav li.left {
+            margin-right: auto !important;
+        }
+
+        .view-cart-btn {
+            background-color: black !important;
+            color: white !important;
+            padding: 8px 16px !important;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
         }
