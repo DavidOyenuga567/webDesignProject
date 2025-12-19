@@ -87,16 +87,21 @@ app.get('/shop', (req, res) => {
   app.get('/login', (req, res) => {
     state={login : true}
     head={title:"login"}
-    res.render('login', { state, head});
+    // allow optional prefill (e.g., after submission)
+    const formDetails = {
+      userEmail: req.query.userEmail || '',
+      userPassword: req.query.userPassword || ''
+    };
+    res.render('login', { state, head, formDetails });
     console.log('login')
   });
 
   app.get('/submission', (req, res) => {
     const formDetails = {
-        userName: req.query.userName,
-        userEmail: req.query.userEmail,
-        userPassword: req.query.userPassword,
-        userRepeatPassword: req.query.userRepeatPassword,
+        userName: req.query.userName || '',
+        userEmail: req.query.userEmail || '',
+        userPassword: req.query.userPassword || '',
+        userRepeatPassword: req.query.userRepeatPassword || '',
     };
     res.render('submission', { formDetails });
 });
