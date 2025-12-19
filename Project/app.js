@@ -99,3 +99,13 @@ app.get('/shop', (req, res) => {
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
+
+let cart = [];
+
+function addtoCart(itemId) {
+  cart = JSON.parse(localStorage.getItem("cart"));
+  cart.push(itemId);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Item has been added to the cart!");
+}
+
