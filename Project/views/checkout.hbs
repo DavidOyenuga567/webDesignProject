@@ -1,3 +1,15 @@
 <main>
 <h1 class="pageTitle">Checkout</h1>
+<div class="checkout-container">
+    <table class="cart-table">
+        <tbody id="cart-items">
+        </tbody>
+    </table>
+    <div class="cart-total">
+        <h2>Total: €<span id="total-price">0.00</span></h2>
+    </div>
+    <button id="checkout-btn" class="btn checkout-btn" onclick="window.location.href='/details'">Proceed to Checkout</button>
+</div>
+
 </main>
+<script src="/js/shop.js"></script>

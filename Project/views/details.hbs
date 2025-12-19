@@ -1,0 +1,56 @@
+<main>
+
+
+<h1>Checkout</h1>
+    <div>    
+        <div> 
+          <form name="checkout" id="user-checkout" action="" method="get">
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                   
+                <div class="form-group">
+                  <label for="Name">Name</label>
+                  <input type="userName" placeholder="Enter Name" >
+               </div>
+
+               <div class="form-group">
+                  <label for="Address">Address</label>
+                  <input type="Address" placeholder="Enter Address" >
+              </div>
+
+              <div class="form-group">
+                  <label for="postcode">Postcode</label>
+                  <input type="postcode" placeholder="Enter Postcode" >
+              </div>
+                
+              
+                <fieldset>
+                    <legend>Payment Details</legend>
+
+                        <label for="getCardName">Card Name</label> 
+                        <input type="text" id="cardName" name="cardname" value="MR FIRSTNAME SURNAME" required>
+             
+                        <label for="getCardNumber">Card Number</label> 
+                        <input type="text" id="cardNumber" name="cardNumber" value="1234 5678 9102 3456" required>
+                   
+                        <label for="getCardCVC">CVC</label> 
+                        <input type="password"  id="cardCvv" name="cardCvv"  required>
+                </fieldset>    
+                <div id="payment-success" role="alert">
+                    Thank you for your purchase. You will receive delivery details via email. Please return to our <a href="shop.html">Shopping Page</a>.
+                </div>
+                <div  id="payment-failure" role="alert">
+                  There seems to be a problem with the card details you entered.
+                </div>                
+                <div>
+                    <input type='submit' class="btn btn-primary" id="buy-now" name="buy-now" value="Buy Now">
+                </div>
+            </form>
+
+
+        </div> 
+    </div>   
+    
+
+
+</main>

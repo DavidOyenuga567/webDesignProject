@@ -83,6 +83,13 @@ app.get('/shop', (req, res) => {
     res.render('checkout', { state, head});
     console.log('checkout')
   });
+
+   app.get('/details', (req, res) => {
+    state={details : true}
+    head={title:"details"}
+    res.render('details', { state, head});
+    console.log('details')
+  });
    
   app.get('/login', (req, res) => {
     state={login : true}
