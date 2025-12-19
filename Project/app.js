@@ -83,6 +83,13 @@ app.get('/shop', (req, res) => {
     res.render('checkout', { state, head});
     console.log('checkout')
   });
+   
+  app.get('/login', (req, res) => {
+    state={login : true}
+    head={title:"login"}
+    res.render('login', { state, head});
+    console.log('login')
+  });
 
   app.get('/submission', (req, res) => {
     const formDetails = {
@@ -100,24 +107,3 @@ app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
 
-function addtoCart(itemId) {
-  cart = JSON.parse(localStorage.getItem("cart"));
-  if (!cart) {
-    cart = [];
-  }
-  cart.push(itemId);
-  localStorage.setItem("cart", JSON.stringify(cart));
-  alert("Item has been added to the cart!");
-}
-
-let cart = JSON.parse(localStorage.getItem("cart")) || [] ;
-
-let products = [
-  { id: 1, name: "25/26 Home Jersey", price: 99.99 },
-  { id: 2, name: "25/26 Away Jersey", price: 70.99 },
-  { id: 3, name: "25/26 Third Jersey", price: 70.99 },
-  { id: 4, name: "24/25 Home Jersey", price: 50.00 },
-  { id: 5, name: "24/25 Away Jersey", price: 40.00 },
-  { id: 6, name: "24/25 Third Jersey", price: 35.00 },
-
-];

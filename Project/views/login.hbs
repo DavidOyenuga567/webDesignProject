@@ -1,0 +1,27 @@
+<main>
+    <h1 class="pageTitle">Login</h1>
+    <div >    
+        <div class="col-sm col-md-4">   
+            <form name="login" id="user-login"  method="get">
+                <div class="form-group">
+                    <label for="emailAddressID">Email address</label>
+                    <input type="email" class="form-control" id="emailAddressID" name="email" value="{{formDetails.userEmail}}" required>
+                </div>
+                <div >
+                    <label for="passwordID">Password</label> 
+                    <input type="password" class="form-control" id="passwordID" name="password" value="{{formDetails.userPassword}}" required>
+                </div>    
+                <div>
+                    <input type='submit' class="btn btn-primary" value="Login">
+                </div>
+            </form>
+            <p> <a href="signup">Need to Register?</a></p>
+
+        </div> 
+    </div>      
+</main>
+
+<script src="/js/login.js"></script>
+<script src="/js/signup.js"></script>
+
+
