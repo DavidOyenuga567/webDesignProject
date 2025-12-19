@@ -77,6 +77,16 @@ app.get('/shop', (req, res) => {
     console.log('cart')
   });
 
+  app.get('/submission', (req, res) => {
+    const formDetails = {
+        userName: req.query.userName,
+        userEmail: req.query.userEmail,
+        userPassword: req.query.userPassword,
+        userRepeatPassword: req.query.userRepeatPassword,
+    };
+    res.render('submission', { formDetails });
+});
+
 // Start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
